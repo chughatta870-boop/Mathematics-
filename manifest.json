@@ -12,63 +12,14 @@
   "scope": "./",
   "categories": ["education", "utilities"],
   "icons": [
-    {
-      "src": "icons/icon-72.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-96.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-128.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-152.png",
-      "sizes": "152x152",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "icons/icon-384.png",
-      "sizes": "384x384",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "screenshots/home.png",
-      "sizes": "390x844",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "ہوم اسکرین"
-    }
+    {"src": "icon-72.png", "sizes": "72x72", "type": "image/png", "purpose": "any"},
+    {"src": "icon-96.png", "sizes": "96x96", "type": "image/png", "purpose": "any"},
+    {"src": "icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any"},
+    {"src": "icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any"},
+    {"src": "icon-152.png", "sizes": "152x152", "type": "image/png", "purpose": "any"},
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
   ],
   "shortcuts": [
     {
@@ -76,23 +27,21 @@
       "short_name": "حاسبہ",
       "description": "سائنسی حاسبہ کھولیں",
       "url": "./index.html?page=calculator",
-      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
     },
     {
       "name": "فارمولے",
       "short_name": "فارمولے",
       "description": "ریاضی فارمولے دیکھیں",
       "url": "./index.html?page=formulas",
-      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
     },
     {
       "name": "کوئز",
       "short_name": "کوئز",
       "description": "ریاضی کوئز دیں",
       "url": "./index.html?page=quiz",
-      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
     }
-  ],
-  "related_applications": [],
-  "prefer_related_applications": false
+  ]
 }
