@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <meta name="description" content="ریاضی - کلاس 9 اور 10 کے لیے مکمل تعلیمی ایپ" />
+  <title>ریاضی | کلاس 9 & 10</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- SPLASH SCREEN -->
+  <div id="splash">
+    <div class="splash-inner">
+      <div class="splash-icon">∑</div>
+      <h1>ریاضی</h1>
+      <p>کلاس 9 & 10</p>
+      <div class="splash-bar"><div class="splash-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- APP WRAPPER -->
+  <div id="app" class="hidden">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="header-title">
+        <span class="header-icon">∑</span>
+        <span>ریاضی</span>
+      </div>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle Theme">◑</button>
+    </header>
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <span class="logo-symbol">∑</span>
+        <div>
+          <div class="logo-title">ریاضی</div>
+          <div class="logo-sub">کلاس 9 & 10</div>
+        </div>
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="#" class="nav-link active" data-page="home">🏠 ہوم</a></li>
+        <li class="nav-section">کلاس 9</li>
+        <li><a href="#" class="nav-link" data-page="ch9-1">باب 1: میٹرکسز</a></li>
+        <li><a href="#" class="nav-link" data-page="ch9-2">باب 2: اصلی اعداد</a></li>
+        <li><a href="#" class="nav-link" data-page="ch9-3">باب 3: لوگارتھم</a></li>
+        <li><a href="#" class="nav-link" data-page="ch9-4">باب 4: الجبرا</a></li>
+        <li><a href="#" class="nav-link" data-page="ch9-5">باب 5: جبری اظہار</a></li>
+        <li class="nav-section">کلاس 10</li>
+        <li><a href="#" class="nav-link" data-page="ch10-1">باب 1: میٹرکسز</a></li>
+        <li><a href="#" class="nav-link" data-page="ch10-2">باب 2: ثنائی نظام</a></li>
+        <li><a href="#" class="nav-link" data-page="ch10-3">باب 3: تناسب</a></li>
+        <li><a href="#" class="nav-link" data-page="ch10-4">باب 4: مثلثیات</a></li>
+        <li><a href="#" class="nav-link" data-page="ch10-5">باب 5: کوآرڈینیٹ</a></li>
+        <li class="nav-section">ٹولز</li>
+        <li><a href="#" class="nav-link" data-page="calculator">🧮 حاسبہ</a></li>
+        <li><a href="#" class="nav-link" data-page="formulas">📐 فارمولے</a></li>
+        <li><a href="#" class="nav-link" data-page="quiz">📝 کوئز</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="mainContent">
+
+      <!-- HOME PAGE -->
+      <section class="page active" id="page-home">
+        <div class="hero">
+          <div class="hero-badge">پاکستان بورڈ نصاب</div>
+          <h1 class="hero-title">ریاضی<br/><span>کلاس 9 & 10</span></h1>
+          <p class="hero-sub">تمام ابواب، فارمولے، اور مشق سوالات ایک جگہ</p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-num">10</div>
+            <div class="stat-label">ابواب</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">50+</div>
+            <div class="stat-label">فارمولے</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">100+</div>
+            <div class="stat-label">مشق سوالات</div>
+          </div>
+        </div>
+
+        <h2 class="section-heading">کلاس 9 ابواب</h2>
+        <div class="chapter-grid" id="class9Grid"></div>
+
+        <h2 class="section-heading">کلاس 10 ابواب</h2>
+        <div class="chapter-grid" id="class10Grid"></div>
+
+        <h2 class="section-heading">فوری ٹولز</h2>
+        <div class="tools-row">
+          <button class="tool-card" data-page="calculator">
+            <span class="tool-icon">🧮</span>
+            <span>حاسبہ</span>
+          </button>
+          <button class="tool-card" data-page="formulas">
+            <span class="tool-icon">📐</span>
+            <span>فارمولے</span>
+          </button>
+          <button class="tool-card" data-page="quiz">
+            <span class="tool-icon">📝</span>
+            <span>کوئز</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- CHAPTER PAGES (dynamically rendered) -->
+      <section class="page" id="page-chapter">
+        <div id="chapterContent"></div>
+      </section>
+
+      <!-- CALCULATOR PAGE -->
+      <section class="page" id="page-calculator">
+        <div class="page-header">
+          <button class="back-btn" data-page="home">← واپس</button>
+          <h2>سائنسی حاسبہ</h2>
+        </div>
+        <div class="calc-display">
+          <div class="calc-expr" id="calcExpr">0</div>
+          <div class="calc-result" id="calcResult"></div>
+        </div>
+        <div class="calc-grid">
+          <button class="calc-btn fn" data-val="sin(">sin</button>
+          <button class="calc-btn fn" data-val="cos(">cos</button>
+          <button class="calc-btn fn" data-val="tan(">tan</button>
+          <button class="calc-btn fn" data-val="log(">log</button>
+          <button class="calc-btn fn" data-val="sqrt(">√</button>
+          <button class="calc-btn fn" data-val="**2">x²</button>
+          <button class="calc-btn fn" data-val="**">xʸ</button>
+          <button class="calc-btn fn" data-val="Math.PI">π</button>
+          <button class="calc-btn op" data-val="(">(</button>
+          <button class="calc-btn op" data-val=")">)</button>
+          <button class="calc-btn op" data-val="%">%</button>
+          <button class="calc-btn clr" id="calcClear">C</button>
+          <button class="calc-btn num" data-val="7">7</button>
+          <button class="calc-btn num" data-val="8">8</button>
+          <button class="calc-btn num" data-val="9">9</button>
+          <button class="calc-btn op" data-val="/">/</button>
+          <button class="calc-btn num" data-val="4">4</button>
+          <button class="calc-btn num" data-val="5">5</button>
+          <button class="calc-btn num" data-val="6">6</button>
+          <button class="calc-btn op" data-val="*">×</button>
+          <button class="calc-btn num" data-val="1">1</button>
+          <button class="calc-btn num" data-val="2">2</button>
+          <button class="calc-btn num" data-val="3">3</button>
+          <button class="calc-btn op" data-val="-">−</button>
+          <button class="calc-btn num" data-val="0">0</button>
+          <button class="calc-btn num" data-val=".">.</button>
+          <button class="calc-btn del" id="calcDel">⌫</button>
+          <button class="calc-btn op" data-val="+">+</button>
+          <button class="calc-btn eq" id="calcEq" style="grid-column: span 4;">=</button>
+        </div>
+      </section>
+
+      <!-- FORMULAS PAGE -->
+      <section class="page" id="page-formulas">
+        <div class="page-header">
+          <button class="back-btn" data-page="home">← واپس</button>
+          <h2>ریاضی فارمولے</h2>
+        </div>
+        <div class="formula-tabs">
+          <button class="ftab active" data-tab="algebra">الجبرا</button>
+          <button class="ftab" data-tab="geometry">ہندسہ</button>
+          <button class="ftab" data-tab="trig">مثلثیات</button>
+          <button class="ftab" data-tab="log">لوگارتھم</button>
+        </div>
+        <div id="formulaContent"></div>
+      </section>
+
+      <!-- QUIZ PAGE -->
+      <section class="page" id="page-quiz">
+        <div class="page-header">
+          <button class="back-btn" data-page="home">← واپس</button>
+          <h2>کوئز</h2>
+        </div>
+        <div id="quizContainer"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- OFFLINE NOTICE -->
+  <div class="offline-toast" id="offlineToast">📵 آفلائن موڈ</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
